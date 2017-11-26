@@ -1,0 +1,12 @@
+# CocoaPod
+Pods/*
+Podfile.lock
+
+# Carthage
+Carthage
+
+# others
+*.swp
+!.gitkeep
+.DS_Store
+
