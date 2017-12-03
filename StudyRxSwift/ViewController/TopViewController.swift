@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TopViewController.swift
 //  StudyRxSwift
 //
 //  Created by 冨樫公一 on 2017/11/19.
@@ -11,8 +11,10 @@ import Firebase
 import RxSwift
 
 
-class ViewController: UIViewController {
+class TopViewController: UIViewController {
 
+    @IBOutlet weak var ownDidTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

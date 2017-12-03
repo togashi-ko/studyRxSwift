@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TopViewController" customModule="StudyRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q1s-ia-XU6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJT-Ec-a3U">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.96862745098039216" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q1s-ia-XU6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gs0-vD-Uz0"/>
+                            <constraint firstItem="Q1s-ia-XU6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JcK-X6-bOM"/>
+                            <constraint firstItem="hJT-Ec-a3U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RoH-MT-wHi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hJT-Ec-a3U" secondAttribute="bottom" id="ag8-cg-kfC"/>
+                            <constraint firstAttribute="trailing" secondItem="hJT-Ec-a3U" secondAttribute="trailing" id="bMj-Ws-n1T"/>
+                            <constraint firstItem="hJT-Ec-a3U" firstAttribute="top" secondItem="Q1s-ia-XU6" secondAttribute="bottom" id="i7G-hH-4ZH"/>
+                            <constraint firstAttribute="trailing" secondItem="Q1s-ia-XU6" secondAttribute="trailing" id="nd5-WS-QPm"/>
+                            <constraint firstItem="hJT-Ec-a3U" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="oR8-Ma-blB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ownDidTableView" destination="Q1s-ia-XU6" id="4Cy-Wy-vxv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+</document>
