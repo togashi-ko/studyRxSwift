@@ -29,9 +29,9 @@ class RxDemoViewController: UIViewController {
     
     func bind() {
         textField.rx.text                  // 4. rx_textは後述
-            .map {"(入力確認:\($0))"}                // 5. 変更があった要素に「」つけて
+            .map {"(入力確認:\(String(describing: $0)))"}                // 5. 変更があった要素に「」つけて
             .bind(to: textLabel.rx.text)         // 6. labelに反映
-            .addDisposableTo(disposeBag)    // 7. 不要になったらunsubscribe
+            .disposed(by: disposeBag)    // 7. 不要になったらunsubscribe
     }
 
 }
