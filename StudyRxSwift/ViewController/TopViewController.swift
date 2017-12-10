@@ -11,7 +11,7 @@ import Firebase
 import RxSwift
 
 
-class TopViewController: UIViewController {
+class TopViewController: UIViewController,UITableViewDelegate {
 
     @IBOutlet weak var ownDidTableView: UITableView!
     

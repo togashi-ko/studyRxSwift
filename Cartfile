@@ -1,4 +1,4 @@
-github "ishkawa/APIKit" ~> 1.1.2
-github "ReactiveX/RxSwift" ~> 3.0
-github "Hearst-DD/ObjectMapper" ~> 2.2.8
-github "Alamofire/Alamofire" ~> 4.5.0
+github "ishkawa/APIKit" 
+github "ReactiveX/RxSwift"
+github "Hearst-DD/ObjectMapper"
+github "Alamofire/Alamofire"
